@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Diri Siswa</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    position:relative;
+
+    background:linear-gradient(
+        -45deg,
+        #e8ffb5,
+        #f8ffb8,
+        #d7ff8f,
+        #fff4a8
+    );
+
+    background-size:400% 400%;
+    animation:bg 12s ease infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Bintang */
+.star{
+    position:absolute;
+    font-size:22px;
+    animation:twinkle 2s infinite alternate;
+    z-index:1;
+}
+
+/* Bunga */
+.flower{
+    position:absolute;
+    font-size:28px;
+    animation:twinkle 3s infinite alternate;
+    z-index:1;
+}
+
+@keyframes twinkle{
+    from{
+        opacity:0.4;
+        transform:scale(0.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1.3);
+        text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff799,
+        0 0 30px #fff799;
+    }
+}
+
+header{
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:25px;
+    z-index:2;
+}
+
+header h1{
+    font-size:42px;
+    color:white;
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #d7ff8f,
+        0 0 40px #fff59d;
+}
+
+header p{
+    color:white;
+    font-size:18px;
+}
+
+.card{
+    width:90%;
+    max-width:700px;
+    padding:30px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(15px);
+
+    border:2px solid rgba(255,255,255,0.4);
+
+    text-align:center;
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.5),
+    0 0 40px rgba(215,255,143,0.5);
+
+    z-index:2;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:white;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.desc{
+    color:white;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.desc p{
+    margin-bottom:15px;
+}
+
+.quote{
+    margin-top:20px;
+    padding:20px;
+
+    background:rgba(255,255,255,0.15);
+
+    border-radius:20px;
+
+    color:white;
+    font-style:italic;
+    font-size:18px;
+}
+
+.social{
+    margin-top:25px;
+}
+
+.social a{
+    color:white;
+    font-size:35px;
+    margin:0 12px;
+    transition:0.3s;
+}
+
+.social a:hover{
+    transform:scale(1.2);
+}
+
+/* Posisi bintang */
+.s1{top:5%;left:8%;}
+.s2{top:12%;right:10%;}
+.s3{bottom:10%;left:10%;}
+.s4{bottom:20%;right:8%;}
+.s5{top:50%;left:3%;}
+
+/* Posisi bunga */
+.f1{top:18%;left:20%;}
+.f2{top:30%;right:10%;}
+.f3{bottom:15%;left:20%;}
+.f4{bottom:30%;right:25%;}
+.f5{top:70%;left:85%;}
+
+@media(max-width:600px){
+
+.card h2{
+font-size:28px;
+}
+
+.profile-img{
+width:140px;
+height:140px;
+}
+
+.desc{
+font-size:15px;
+}
+
+.quote{
+font-size:15px;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- Bintang -->
+<div class="star s1">⭐</div>
+<div class="star s2">✨</div>
+<div class="star s3">⭐</div>
+<div class="star s4">✨</div>
+<div class="star s5">⭐</div>
+
+<!-- Bunga -->
+<div class="flower f1">🌼</div>
+<div class="flower f2">🌸</div>
+<div class="flower f3">🌼</div>
+<div class="flower f4">🌸</div>
+<div class="flower f5">🌼</div>
+
+<header>
+    <h1>PROFILE DIRI SISWA</h1>
+    <p>🌼 Kreatif • Ceria • Berprestasi ✨</p>
+</header>
+
+<div class="card">
+
+    <img src="IMG_20260513_095725_943.webp" alt="Foto Profil" class="profile-img">
+
+    <h2>Nur Afiza Fadia Putri</h2>
+
+    <div class="desc">
+
+        <p>
+        🌱 <b>Kelas:</b><br>
+        XA Keperawatan — tempat aku belajar, berkembang, dan berusaha menjadi versi terbaik dari diriku setiap hari.
+        </p>
+
+        <p>
+        🏫 <b>Sekolah:</b><br>
+        SMKS Kesehatan Yannas Husada Bangkalan — tempat aku menimba ilmu, membangun karakter, dan mengejar cita-cita masa depan.
+        </p>
+
+        <p>
+        📚 <b>Hobi:</b><br>
+        Membaca novel karena setiap cerita membawa petualangan baru, inspirasi, dan memperkaya imajinasi.
+        </p>
+
+    </div>
+
+    <div class="quote">
+        ✨ "Belajar hari ini adalah langkah kecil untuk mewujudkan impian besar di masa depan." ✨
+    </div>
+
+    <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+
+</div>
+
+</body>
+</html>
